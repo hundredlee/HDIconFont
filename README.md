@@ -37,3 +37,7 @@ HDIconImageMake(@"tab_home_icon",[UIColor orangeColor],25);
 ```
 
 
+####6.效果图
+![](media/14658386251039/14658394738631.jpg)
+
+
