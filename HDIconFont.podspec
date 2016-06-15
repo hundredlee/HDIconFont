@@ -25,7 +25,28 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   DESC
+
+        ```objectivec
+    #import "HDIconFont.h"
+    ```
+
+    ```objectivec
+    //HDIconFont Register
+        [[HDIconFont instance] initWithConfig:@{
+                                                @(HDFontPath):@"iconfont.ttf",
+                                                @(HDFontName):@"iconfont",
+                                                @(HDFontString):
+                                                    @{
+                                                        @"tab_home_icon":@"\U0000e603"
+                                                        }
+                                                }];
+    ```
+
+    ```objectivec
+    HDIconImageMake(@"tab_home_icon",[UIColor orangeColor],25);
+    ```
+
+		DESC
 
   s.homepage     = "https://github.com/hundredlee/HDIconFont"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -64,7 +85,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"

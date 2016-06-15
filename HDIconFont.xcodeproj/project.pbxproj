@@ -41,6 +41,7 @@
 		3542AD861D0F142700196CD7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3542AD871D0F142700196CD7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		3542AD891D0F183A00196CD7 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		35B2BFD51D1113810065D169 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		35E9598D1D0F121C0016E5F9 /* HDIconFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDIconFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E959911D0F121C0016E5F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35E959931D0F121C0016E5F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,7 +126,6 @@
 				35E9599E1D0F121C0016E5F9 /* LaunchScreen.storyboard */,
 				35E9599C1D0F121C0016E5F9 /* Assets.xcassets */,
 				35E959911D0F121C0016E5F9 /* main.m */,
-				35E959A11D0F121C0016E5F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,8 +164,10 @@
 		35E959C41D0F133B0016E5F9 /* HDIconFont */ = {
 			isa = PBXGroup;
 			children = (
+				35E959A11D0F121C0016E5F9 /* Info.plist */,
 				35E959C51D0F135C0016E5F9 /* HDIconFont.h */,
 				35E959C61D0F135C0016E5F9 /* HDIconFont.m */,
+				35B2BFD51D1113810065D169 /* PrefixHeader.pch */,
 			);
 			name = HDIconFont;
 			sourceTree = "<group>";
@@ -449,6 +451,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = HDIconFontDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HDIconFontDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matrix.HDIconFontDemo;
@@ -460,6 +464,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = HDIconFontDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HDIconFontDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matrix.HDIconFontDemo;

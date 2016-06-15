@@ -10,7 +10,6 @@
 
 UIImage *HDIconImageMake(NSString *iconCode,UIColor *color,CGFloat size);
 
-
 @interface HDIconFont : NSObject
 
 typedef NS_ENUM(NSInteger,HDIconConfigKey){
