@@ -1,4 +1,5 @@
 # HDIconFont
+##pod 'HDIconFont'
 ####1.首先引入在plist里面引入ttf文件
 ![](media/14658386251039/14658387230846.jpg)
 
